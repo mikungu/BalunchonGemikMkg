@@ -7,23 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCBA721C29713AB600A6323B /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA721B29713AB600A6323B /* TranslationService.swift */; };
 		DCE4C4B0296DD28E004BB591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4AF296DD28E004BB591 /* AppDelegate.swift */; };
 		DCE4C4B2296DD28E004BB591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4B1296DD28E004BB591 /* SceneDelegate.swift */; };
-		DCE4C4B4296DD28E004BB591 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4B3296DD28E004BB591 /* ViewController.swift */; };
 		DCE4C4B7296DD28E004BB591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4C4B5296DD28E004BB591 /* Main.storyboard */; };
 		DCE4C4B9296DD28F004BB591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE4C4B8296DD28F004BB591 /* Assets.xcassets */; };
 		DCE4C4BC296DD290004BB591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4C4BA296DD290004BB591 /* LaunchScreen.storyboard */; };
+		DCE4C4CE296DD7C2004BB591 /* DollarServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4CD296DD7C2004BB591 /* DollarServicesTests.swift */; };
+		DCE4C4DB296DD808004BB591 /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4DA296DD808004BB591 /* WeatherServices.swift */; };
+		DCE4C4E2296DD894004BB591 /* DollarServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4E1296DD894004BB591 /* DollarServices.swift */; };
+		DCE4C4E4296DD8AF004BB591 /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4E3296DD8AF004BB591 /* WeatherServices.swift */; };
+		DCE4C4EE296DD928004BB591 /* TranslateServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4ED296DD928004BB591 /* TranslateServicesTests.swift */; };
+		DCE4C4F5296DE09C004BB591 /* DollarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4F4296DE09C004BB591 /* DollarViewController.swift */; };
+		DCE4C4F7296DE0DB004BB591 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4F6296DE0DB004BB591 /* WeatherViewController.swift */; };
+		DCE4C4F9296DE112004BB591 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4F8296DE112004BB591 /* TranslationViewController.swift */; };
+		DCE4C4FB296E01E2004BB591 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4FA296E01E2004BB591 /* Dollar.swift */; };
+		DCE4C4FD296E0E46004BB591 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4FC296E0E46004BB591 /* Weather.swift */; };
+		DCE4C4FF296E1B1A004BB591 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4FE296E1B1A004BB591 /* Translation.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DCE4C4CF296DD7C2004BB591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE4C4A4296DD28E004BB591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE4C4AB296DD28E004BB591;
+			remoteInfo = BalunchonGemikMkg;
+		};
+		DCE4C4DC296DD808004BB591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE4C4A4296DD28E004BB591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE4C4AB296DD28E004BB591;
+			remoteInfo = BalunchonGemikMkg;
+		};
+		DCE4C4EF296DD928004BB591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE4C4A4296DD28E004BB591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE4C4AB296DD28E004BB591;
+			remoteInfo = BalunchonGemikMkg;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		DCBA721B29713AB600A6323B /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 		DCE4C4AC296DD28E004BB591 /* BalunchonGemikMkg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalunchonGemikMkg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE4C4AF296DD28E004BB591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE4C4B1296DD28E004BB591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCE4C4B3296DD28E004BB591 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCE4C4B6296DD28E004BB591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCE4C4B8296DD28F004BB591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCE4C4BB296DD290004BB591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCE4C4BD296DD290004BB591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE4C4CB296DD7C2004BB591 /* DollarServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollarServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE4C4CD296DD7C2004BB591 /* DollarServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarServicesTests.swift; sourceTree = "<group>"; };
+		DCE4C4D8296DD808004BB591 /* WeatherServices.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherServices.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE4C4DA296DD808004BB591 /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
+		DCE4C4E1296DD894004BB591 /* DollarServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarServices.swift; sourceTree = "<group>"; };
+		DCE4C4E3296DD8AF004BB591 /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
+		DCE4C4EB296DD928004BB591 /* TranslateServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE4C4ED296DD928004BB591 /* TranslateServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServicesTests.swift; sourceTree = "<group>"; };
+		DCE4C4F4296DE09C004BB591 /* DollarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarViewController.swift; sourceTree = "<group>"; };
+		DCE4C4F6296DE0DB004BB591 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		DCE4C4F8296DE112004BB591 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
+		DCE4C4FA296E01E2004BB591 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
+		DCE4C4FC296E0E46004BB591 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		DCE4C4FE296E1B1A004BB591 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +83,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCE4C4C8296DD7C2004BB591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE4C4D5296DD808004BB591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE4C4E8296DD928004BB591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCBA721D2971B63C00A6323B /* Dollar */ = {
+			isa = PBXGroup;
+			children = (
+				DCBA721E2971B67500A6323B /* Model */,
+				DCBA72202971B69600A6323B /* Controller */,
+			);
+			path = Dollar;
+			sourceTree = "<group>";
+		};
+		DCBA721E2971B67500A6323B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4FA296E01E2004BB591 /* Dollar.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCBA72202971B69600A6323B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4F4296DE09C004BB591 /* DollarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCBA72212971B6D800A6323B /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				DCBA72222971B70600A6323B /* Model */,
+				DCBA72232971B71100A6323B /* Controller */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		DCBA72222971B70600A6323B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4FC296E0E46004BB591 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCBA72232971B71100A6323B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4F6296DE0DB004BB591 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCBA72242971B75300A6323B /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4C4296DD3AE004BB591 /* Model */,
+				DCE4C4C5296DD3EC004BB591 /* Controller */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		DCBA72252971C0C700A6323B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DCBA721B29713AB600A6323B /* TranslationService.swift */,
+				DCE4C4E3296DD8AF004BB591 /* WeatherServices.swift */,
+				DCE4C4E1296DD894004BB591 /* DollarServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DCE4C4A3296DD28E004BB591 = {
 			isa = PBXGroup;
 			children = (
 				DCE4C4AE296DD28E004BB591 /* BalunchonGemikMkg */,
+				DCE4C4CC296DD7C2004BB591 /* DollarServicesTests */,
+				DCE4C4D9296DD808004BB591 /* WeatherServices */,
+				DCE4C4EC296DD928004BB591 /* TranslateServicesTests */,
 				DCE4C4AD296DD28E004BB591 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				DCE4C4AC296DD28E004BB591 /* BalunchonGemikMkg.app */,
+				DCE4C4CB296DD7C2004BB591 /* DollarServicesTests.xctest */,
+				DCE4C4D8296DD808004BB591 /* WeatherServices.xctest */,
+				DCE4C4EB296DD928004BB591 /* TranslateServicesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +203,72 @@
 			children = (
 				DCE4C4AF296DD28E004BB591 /* AppDelegate.swift */,
 				DCE4C4B1296DD28E004BB591 /* SceneDelegate.swift */,
-				DCE4C4B3296DD28E004BB591 /* ViewController.swift */,
-				DCE4C4B5296DD28E004BB591 /* Main.storyboard */,
-				DCE4C4B8296DD28F004BB591 /* Assets.xcassets */,
-				DCE4C4BA296DD290004BB591 /* LaunchScreen.storyboard */,
 				DCE4C4BD296DD290004BB591 /* Info.plist */,
+				DCE4C4C3296DD321004BB591 /* Supporting File */,
+				DCBA721D2971B63C00A6323B /* Dollar */,
+				DCBA72212971B6D800A6323B /* Weather */,
+				DCBA72242971B75300A6323B /* Translation */,
+				DCE4C4C6296DD420004BB591 /* View */,
+				DCBA72252971C0C700A6323B /* Services */,
 			);
 			path = BalunchonGemikMkg;
+			sourceTree = "<group>";
+		};
+		DCE4C4C3296DD321004BB591 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		DCE4C4C4296DD3AE004BB591 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4FE296E1B1A004BB591 /* Translation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCE4C4C5296DD3EC004BB591 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4F8296DE112004BB591 /* TranslationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCE4C4C6296DD420004BB591 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4B5296DD28E004BB591 /* Main.storyboard */,
+				DCE4C4BA296DD290004BB591 /* LaunchScreen.storyboard */,
+				DCE4C4B8296DD28F004BB591 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCE4C4CC296DD7C2004BB591 /* DollarServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4CD296DD7C2004BB591 /* DollarServicesTests.swift */,
+			);
+			path = DollarServicesTests;
+			sourceTree = "<group>";
+		};
+		DCE4C4D9296DD808004BB591 /* WeatherServices */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4DA296DD808004BB591 /* WeatherServices.swift */,
+			);
+			path = WeatherServices;
+			sourceTree = "<group>";
+		};
+		DCE4C4EC296DD928004BB591 /* TranslateServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4C4ED296DD928004BB591 /* TranslateServicesTests.swift */,
+			);
+			path = TranslateServicesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +291,60 @@
 			productReference = DCE4C4AC296DD28E004BB591 /* BalunchonGemikMkg.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DCE4C4CA296DD7C2004BB591 /* DollarServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE4C4D1296DD7C2004BB591 /* Build configuration list for PBXNativeTarget "DollarServicesTests" */;
+			buildPhases = (
+				DCE4C4C7296DD7C2004BB591 /* Sources */,
+				DCE4C4C8296DD7C2004BB591 /* Frameworks */,
+				DCE4C4C9296DD7C2004BB591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE4C4D0296DD7C2004BB591 /* PBXTargetDependency */,
+			);
+			name = DollarServicesTests;
+			productName = DollarServicesTests;
+			productReference = DCE4C4CB296DD7C2004BB591 /* DollarServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCE4C4D7296DD808004BB591 /* WeatherServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE4C4DE296DD808004BB591 /* Build configuration list for PBXNativeTarget "WeatherServices" */;
+			buildPhases = (
+				DCE4C4D4296DD808004BB591 /* Sources */,
+				DCE4C4D5296DD808004BB591 /* Frameworks */,
+				DCE4C4D6296DD808004BB591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE4C4DD296DD808004BB591 /* PBXTargetDependency */,
+			);
+			name = WeatherServices;
+			productName = WeatherServices;
+			productReference = DCE4C4D8296DD808004BB591 /* WeatherServices.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCE4C4EA296DD928004BB591 /* TranslateServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE4C4F1296DD928004BB591 /* Build configuration list for PBXNativeTarget "TranslateServicesTests" */;
+			buildPhases = (
+				DCE4C4E7296DD928004BB591 /* Sources */,
+				DCE4C4E8296DD928004BB591 /* Frameworks */,
+				DCE4C4E9296DD928004BB591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCE4C4F0296DD928004BB591 /* PBXTargetDependency */,
+			);
+			name = TranslateServicesTests;
+			productName = TranslateServicesTests;
+			productReference = DCE4C4EB296DD928004BB591 /* TranslateServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +357,18 @@
 				TargetAttributes = {
 					DCE4C4AB296DD28E004BB591 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					DCE4C4CA296DD7C2004BB591 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = DCE4C4AB296DD28E004BB591;
+					};
+					DCE4C4D7296DD808004BB591 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = DCE4C4AB296DD28E004BB591;
+					};
+					DCE4C4EA296DD928004BB591 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = DCE4C4AB296DD28E004BB591;
 					};
 				};
 			};
@@ -116,6 +386,9 @@
 			projectRoot = "";
 			targets = (
 				DCE4C4AB296DD28E004BB591 /* BalunchonGemikMkg */,
+				DCE4C4CA296DD7C2004BB591 /* DollarServicesTests */,
+				DCE4C4D7296DD808004BB591 /* WeatherServices */,
+				DCE4C4EA296DD928004BB591 /* TranslateServicesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +404,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCE4C4C9296DD7C2004BB591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE4C4D6296DD808004BB591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE4C4E9296DD928004BB591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +432,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE4C4B4296DD28E004BB591 /* ViewController.swift in Sources */,
+				DCBA721C29713AB600A6323B /* TranslationService.swift in Sources */,
+				DCE4C4F9296DE112004BB591 /* TranslationViewController.swift in Sources */,
+				DCE4C4FB296E01E2004BB591 /* Dollar.swift in Sources */,
+				DCE4C4FF296E1B1A004BB591 /* Translation.swift in Sources */,
+				DCE4C4E4296DD8AF004BB591 /* WeatherServices.swift in Sources */,
+				DCE4C4FD296E0E46004BB591 /* Weather.swift in Sources */,
+				DCE4C4F5296DE09C004BB591 /* DollarViewController.swift in Sources */,
+				DCE4C4E2296DD894004BB591 /* DollarServices.swift in Sources */,
+				DCE4C4F7296DE0DB004BB591 /* WeatherViewController.swift in Sources */,
 				DCE4C4B0296DD28E004BB591 /* AppDelegate.swift in Sources */,
 				DCE4C4B2296DD28E004BB591 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCE4C4C7296DD7C2004BB591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE4C4CE296DD7C2004BB591 /* DollarServicesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE4C4D4296DD808004BB591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE4C4DB296DD808004BB591 /* WeatherServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE4C4E7296DD928004BB591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE4C4EE296DD928004BB591 /* TranslateServicesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCE4C4D0296DD7C2004BB591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE4C4AB296DD28E004BB591 /* BalunchonGemikMkg */;
+			targetProxy = DCE4C4CF296DD7C2004BB591 /* PBXContainerItemProxy */;
+		};
+		DCE4C4DD296DD808004BB591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE4C4AB296DD28E004BB591 /* BalunchonGemikMkg */;
+			targetProxy = DCE4C4DC296DD808004BB591 /* PBXContainerItemProxy */;
+		};
+		DCE4C4F0296DD928004BB591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE4C4AB296DD28E004BB591 /* BalunchonGemikMkg */;
+			targetProxy = DCE4C4EF296DD928004BB591 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DCE4C4B5296DD28E004BB591 /* Main.storyboard */ = {
@@ -334,6 +678,108 @@
 			};
 			name = Release;
 		};
+		DCE4C4D2296DD7C2004BB591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OpenClassrooms.DollarServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalunchonGemikMkg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalunchonGemikMkg";
+			};
+			name = Debug;
+		};
+		DCE4C4D3296DD7C2004BB591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OpenClassrooms.DollarServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalunchonGemikMkg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalunchonGemikMkg";
+			};
+			name = Release;
+		};
+		DCE4C4DF296DD808004BB591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OpenClassrooms.WeatherServices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalunchonGemikMkg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalunchonGemikMkg";
+			};
+			name = Debug;
+		};
+		DCE4C4E0296DD808004BB591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OpenClassrooms.WeatherServices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalunchonGemikMkg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalunchonGemikMkg";
+			};
+			name = Release;
+		};
+		DCE4C4F2296DD928004BB591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OpenClassrooms.TranslateServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalunchonGemikMkg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalunchonGemikMkg";
+			};
+			name = Debug;
+		};
+		DCE4C4F3296DD928004BB591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OpenClassrooms.TranslateServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalunchonGemikMkg.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BalunchonGemikMkg";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +797,33 @@
 			buildConfigurations = (
 				DCE4C4C1296DD290004BB591 /* Debug */,
 				DCE4C4C2296DD290004BB591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE4C4D1296DD7C2004BB591 /* Build configuration list for PBXNativeTarget "DollarServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE4C4D2296DD7C2004BB591 /* Debug */,
+				DCE4C4D3296DD7C2004BB591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE4C4DE296DD808004BB591 /* Build configuration list for PBXNativeTarget "WeatherServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE4C4DF296DD808004BB591 /* Debug */,
+				DCE4C4E0296DD808004BB591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE4C4F1296DD928004BB591 /* Build configuration list for PBXNativeTarget "TranslateServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE4C4F2296DD928004BB591 /* Debug */,
+				DCE4C4F3296DD928004BB591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
