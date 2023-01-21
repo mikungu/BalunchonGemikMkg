@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AHE-Mk-gzd">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Translation-->
+        <scene sceneID="Oxs-N5-v0d">
+            <objects>
+                <viewController storyboardIdentifier="TranslationViewController" id="AHE-Mk-gzd" customClass="TranslationViewController" customModule="BalunchonGemikMkg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w0V-46-NEl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyn-WV-qIt">
+                                <rect key="frame" x="16" y="750.66666666666663" width="358" height="34.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Traduire"/>
+                                <connections>
+                                    <action selector="translateTapped:" destination="AHE-Mk-gzd" eventType="touchUpInside" id="ODm-ke-02g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traduisez la langue que vous souhaitez en anglais!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogs-HS-wwp">
+                                <rect key="frame" x="16" y="63" width="358" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niy-RR-7Os" userLabel="Text Traducted Area">
+                                <rect key="frame" x="16" y="439.33333333333337" width="358" height="261.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-ur-7bq" userLabel="textTraductedArea">
+                                        <rect key="frame" x="19" y="25.666666666666686" width="320" height="210"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="WjH-L8-bC9"/>
+                                            <constraint firstAttribute="height" constant="210" id="zoL-BB-ReF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="RCg-ur-7bq" firstAttribute="centerY" secondItem="niy-RR-7Os" secondAttribute="centerY" id="aJ2-E4-jTY"/>
+                                    <constraint firstItem="RCg-ur-7bq" firstAttribute="centerX" secondItem="niy-RR-7Os" secondAttribute="centerX" id="aZX-5Y-f63"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXa-TI-09i">
+                                <rect key="frame" x="154.33333333333334" y="412" width="81.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cr0-Rf-QDx">
+                                <rect key="frame" x="16" y="133.66666666666663" width="358" height="243.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EPP-2Z-CJt"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="EPP-2Z-CJt" firstAttribute="trailing" secondItem="Cr0-Rf-QDx" secondAttribute="trailing" constant="16" id="556-IB-eTa"/>
+                            <constraint firstItem="EPP-2Z-CJt" firstAttribute="bottom" secondItem="nyn-WV-qIt" secondAttribute="bottom" constant="25" id="DSw-Bg-D02"/>
+                            <constraint firstItem="EPP-2Z-CJt" firstAttribute="trailing" secondItem="nyn-WV-qIt" secondAttribute="trailing" constant="16" id="Ley-rr-0bZ"/>
+                            <constraint firstItem="EPP-2Z-CJt" firstAttribute="trailing" secondItem="niy-RR-7Os" secondAttribute="trailing" constant="16" id="a7g-yr-zsu"/>
+                            <constraint firstItem="Ogs-HS-wwp" firstAttribute="top" secondItem="EPP-2Z-CJt" secondAttribute="top" constant="16" id="b04-Wi-Myz"/>
+                            <constraint firstItem="niy-RR-7Os" firstAttribute="leading" secondItem="EPP-2Z-CJt" secondAttribute="leading" constant="16" id="cRA-2V-jka"/>
+                            <constraint firstItem="eXa-TI-09i" firstAttribute="top" secondItem="Cr0-Rf-QDx" secondAttribute="bottom" constant="35" id="da6-zh-ouX"/>
+                            <constraint firstItem="nyn-WV-qIt" firstAttribute="top" secondItem="niy-RR-7Os" secondAttribute="bottom" constant="50" id="epy-s0-tod"/>
+                            <constraint firstItem="Cr0-Rf-QDx" firstAttribute="top" secondItem="Ogs-HS-wwp" secondAttribute="bottom" constant="30" id="gQD-oC-1hk"/>
+                            <constraint firstItem="niy-RR-7Os" firstAttribute="top" secondItem="eXa-TI-09i" secondAttribute="bottom" constant="7" id="mB6-Yu-Vt6"/>
+                            <constraint firstAttribute="trailing" secondItem="Ogs-HS-wwp" secondAttribute="trailing" constant="16" id="oM0-XH-ktE"/>
+                            <constraint firstItem="eXa-TI-09i" firstAttribute="centerY" secondItem="w0V-46-NEl" secondAttribute="centerY" id="q3g-fJ-ltZ"/>
+                            <constraint firstItem="nyn-WV-qIt" firstAttribute="leading" secondItem="EPP-2Z-CJt" secondAttribute="leading" constant="16" id="rh3-7G-x0I"/>
+                            <constraint firstItem="Ogs-HS-wwp" firstAttribute="leading" secondItem="EPP-2Z-CJt" secondAttribute="leading" constant="16" id="w59-zq-wQI"/>
+                            <constraint firstItem="eXa-TI-09i" firstAttribute="centerX" secondItem="w0V-46-NEl" secondAttribute="centerX" id="x3G-yq-sVI"/>
+                            <constraint firstItem="Cr0-Rf-QDx" firstAttribute="leading" secondItem="EPP-2Z-CJt" secondAttribute="leading" constant="16" id="xs0-GQ-y0F"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="FR1-af-r3T" appends="YES" id="Un2-MU-ZQK"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Translation" image="globe" catalog="system" id="zJf-2q-093"/>
+                    <connections>
+                        <outlet property="textArea" destination="Cr0-Rf-QDx" id="Hjg-e1-KTn"/>
+                        <outlet property="textTraductedArea" destination="RCg-ur-7bq" id="kny-a3-D3M"/>
+                        <outlet property="traductionButton" destination="nyn-WV-qIt" id="myj-lI-oJr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P82-JG-6E5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FR1-af-r3T">
+                    <connections>
+                        <action selector="dismissKeyBoardTranslate:" destination="AHE-Mk-gzd" id="f0C-JB-mdD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="5.6074766355140184" y="928.50971922246231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

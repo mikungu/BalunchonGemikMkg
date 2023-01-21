@@ -8,8 +8,8 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
-
-   
+    
+    //MARK: -Properties
     @IBOutlet weak var imageNYWeather: UIImageView!
     
     @IBOutlet weak var descriptionNYLabel: UILabel!
@@ -25,24 +25,25 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var imageRMWeather: UIImageView!
     
     
-    let weather = WeatherService (weatherSession: URLSession(configuration: .default), iconSession: URLSession(configuration: .default))
-    
+    let weather = WeatherModel()
+    //MARK: -Override
     override func viewDidLoad() {
         
-        weather.getWeather(request: weather.createRequestWeather(city: "New+York")) { succes, weather in if succes, let weather = weather {
-            self.descriptionNYLabel.text = weather.descriptionConditions(codeWeather: weather.codeWeather)
-            self.temperatureNYLabel.text = "Il fait\(String(weather.degree))°C"
-            self.imageNYWeather.image = UIImage(data: weather.skyImage)
-        }
+        weather.getWeather (city: "New+York") { (succes, weather) in
+            if succes, let weather = weather {
+                self.descriptionNYLabel.text = weather.descriptionConditions(id: weather.id)
+                self.temperatureNYLabel.text = "Il fait\(String(weather.degree))°C"
+                self.imageNYWeather.image = UIImage(data: weather.skyImage)
+            }
             else {
                 self.presentAlert(with: "Oups! Echec de requête")
             }
         }
-
-        weather.getWeather(request: weather.createRequestWeather(city: "Roma")) {
+        
+        weather.getWeather(city: "Roma") {
             succes, weather in
             if succes, let weather = weather {
-                self.descriptionRoma.text = weather.descriptionConditions(codeWeather: weather.codeWeather)
+                self.descriptionRoma.text = weather.descriptionConditions(id: weather.id)
                 self.temperatureRoma.text = "Il fait \(String(weather.degree))°C"
                 self.imageRMWeather.image = UIImage(data: weather.skyImage)
             }
@@ -52,10 +53,8 @@ class WeatherViewController: UIViewController {
         }
     }
     
-
-
 }
-
+//MARK: -Extension 
 extension WeatherViewController {
     
     private func presentAlert(with error: String){

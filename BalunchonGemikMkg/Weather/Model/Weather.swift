@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct Weather {
+struct Weather : Decodable {
     //We only need here four properties for describing the weather:
     //the place where we wanna know. It's a string
-    var place: String
+    var city : String
     //the code of the weather conditions
-    var codeWeather: Int
+    var id: Int
     //the degree or temperature
     var degree: Double
     //the representation image of sky which is a data
     var skyImage: Data
     //We implement the function which allows to describe or to interprate any code weather condition by using codeWeather as parameter to return a String
-    func descriptionConditions (codeWeather: Int) -> String {
-        switch codeWeather {
+    func descriptionConditions (id: Int) -> String {
+        switch id {
         case 200...202:
             return "Fortes pluies avec des orages"
         case 210...211:

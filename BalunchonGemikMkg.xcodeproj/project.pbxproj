@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCBA721C29713AB600A6323B /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBA721B29713AB600A6323B /* TranslationService.swift */; };
+		DC3825F32975D2040091D1A7 /* Dollar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3825F22975D2040091D1A7 /* Dollar.storyboard */; };
+		DC6419E9297A84F90066FFFA /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6419E8297A84F90066FFFA /* APIServices.swift */; };
+		DC9E37382975D703002D4BF8 /* Translation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9E37372975D703002D4BF8 /* Translation.storyboard */; };
 		DCE4C4B0296DD28E004BB591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4AF296DD28E004BB591 /* AppDelegate.swift */; };
 		DCE4C4B2296DD28E004BB591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4B1296DD28E004BB591 /* SceneDelegate.swift */; };
 		DCE4C4B7296DD28E004BB591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4C4B5296DD28E004BB591 /* Main.storyboard */; };
@@ -15,8 +17,6 @@
 		DCE4C4BC296DD290004BB591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4C4BA296DD290004BB591 /* LaunchScreen.storyboard */; };
 		DCE4C4CE296DD7C2004BB591 /* DollarServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4CD296DD7C2004BB591 /* DollarServicesTests.swift */; };
 		DCE4C4DB296DD808004BB591 /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4DA296DD808004BB591 /* WeatherServices.swift */; };
-		DCE4C4E2296DD894004BB591 /* DollarServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4E1296DD894004BB591 /* DollarServices.swift */; };
-		DCE4C4E4296DD8AF004BB591 /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4E3296DD8AF004BB591 /* WeatherServices.swift */; };
 		DCE4C4EE296DD928004BB591 /* TranslateServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4ED296DD928004BB591 /* TranslateServicesTests.swift */; };
 		DCE4C4F5296DE09C004BB591 /* DollarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4F4296DE09C004BB591 /* DollarViewController.swift */; };
 		DCE4C4F7296DE0DB004BB591 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4F6296DE0DB004BB591 /* WeatherViewController.swift */; };
@@ -24,6 +24,7 @@
 		DCE4C4FB296E01E2004BB591 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4FA296E01E2004BB591 /* Dollar.swift */; };
 		DCE4C4FD296E0E46004BB591 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4FC296E0E46004BB591 /* Weather.swift */; };
 		DCE4C4FF296E1B1A004BB591 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4C4FE296E1B1A004BB591 /* Translation.swift */; };
+		DCF068FF2975D40900D50678 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF068FE2975D40900D50678 /* Weather.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DCBA721B29713AB600A6323B /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		DC3825F22975D2040091D1A7 /* Dollar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Dollar.storyboard; path = ../../View/Dollar.storyboard; sourceTree = "<group>"; };
+		DC6419E8297A84F90066FFFA /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		DC9E37372975D703002D4BF8 /* Translation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Translation.storyboard; path = ../../View/Translation.storyboard; sourceTree = "<group>"; };
 		DCE4C4AC296DD28E004BB591 /* BalunchonGemikMkg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalunchonGemikMkg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE4C4AF296DD28E004BB591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE4C4B1296DD28E004BB591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,8 +66,6 @@
 		DCE4C4CD296DD7C2004BB591 /* DollarServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarServicesTests.swift; sourceTree = "<group>"; };
 		DCE4C4D8296DD808004BB591 /* WeatherServices.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherServices.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE4C4DA296DD808004BB591 /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
-		DCE4C4E1296DD894004BB591 /* DollarServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarServices.swift; sourceTree = "<group>"; };
-		DCE4C4E3296DD8AF004BB591 /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
 		DCE4C4EB296DD928004BB591 /* TranslateServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE4C4ED296DD928004BB591 /* TranslateServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServicesTests.swift; sourceTree = "<group>"; };
 		DCE4C4F4296DE09C004BB591 /* DollarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		DCE4C4FA296E01E2004BB591 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 		DCE4C4FC296E0E46004BB591 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		DCE4C4FE296E1B1A004BB591 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		DCF068FE2975D40900D50678 /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Weather.storyboard; path = ../../View/Weather.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +109,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC7487B32975C55400ED7779 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC3825F22975D2040091D1A7 /* Dollar.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC7487B42975C56E00ED7779 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCF068FE2975D40900D50678 /* Weather.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC7487B52975C59B00ED7779 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC9E37372975D703002D4BF8 /* Translation.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DCBA721D2971B63C00A6323B /* Dollar */ = {
 			isa = PBXGroup;
 			children = (
 				DCBA721E2971B67500A6323B /* Model */,
+				DC7487B32975C55400ED7779 /* View */,
 				DCBA72202971B69600A6323B /* Controller */,
 			);
 			path = Dollar;
@@ -136,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				DCBA72222971B70600A6323B /* Model */,
+				DC7487B42975C56E00ED7779 /* View */,
 				DCBA72232971B71100A6323B /* Controller */,
 			);
 			path = Weather;
@@ -161,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				DCE4C4C4296DD3AE004BB591 /* Model */,
+				DC7487B52975C59B00ED7779 /* View */,
 				DCE4C4C5296DD3EC004BB591 /* Controller */,
 			);
 			path = Translation;
@@ -169,9 +198,7 @@
 		DCBA72252971C0C700A6323B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DCBA721B29713AB600A6323B /* TranslationService.swift */,
-				DCE4C4E3296DD8AF004BB591 /* WeatherServices.swift */,
-				DCE4C4E1296DD894004BB591 /* DollarServices.swift */,
+				DC6419E8297A84F90066FFFA /* APIServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,8 +228,6 @@
 		DCE4C4AE296DD28E004BB591 /* BalunchonGemikMkg */ = {
 			isa = PBXGroup;
 			children = (
-				DCE4C4AF296DD28E004BB591 /* AppDelegate.swift */,
-				DCE4C4B1296DD28E004BB591 /* SceneDelegate.swift */,
 				DCE4C4BD296DD290004BB591 /* Info.plist */,
 				DCE4C4C3296DD321004BB591 /* Supporting File */,
 				DCBA721D2971B63C00A6323B /* Dollar */,
@@ -217,6 +242,8 @@
 		DCE4C4C3296DD321004BB591 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				DCE4C4AF296DD28E004BB591 /* AppDelegate.swift */,
+				DCE4C4B1296DD28E004BB591 /* SceneDelegate.swift */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -399,7 +426,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE4C4BC296DD290004BB591 /* LaunchScreen.storyboard in Resources */,
+				DCF068FF2975D40900D50678 /* Weather.storyboard in Resources */,
 				DCE4C4B9296DD28F004BB591 /* Assets.xcassets in Resources */,
+				DC3825F32975D2040091D1A7 /* Dollar.storyboard in Resources */,
+				DC9E37382975D703002D4BF8 /* Translation.storyboard in Resources */,
 				DCE4C4B7296DD28E004BB591 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,14 +462,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBA721C29713AB600A6323B /* TranslationService.swift in Sources */,
 				DCE4C4F9296DE112004BB591 /* TranslationViewController.swift in Sources */,
 				DCE4C4FB296E01E2004BB591 /* Dollar.swift in Sources */,
 				DCE4C4FF296E1B1A004BB591 /* Translation.swift in Sources */,
-				DCE4C4E4296DD8AF004BB591 /* WeatherServices.swift in Sources */,
+				DC6419E9297A84F90066FFFA /* APIServices.swift in Sources */,
 				DCE4C4FD296E0E46004BB591 /* Weather.swift in Sources */,
 				DCE4C4F5296DE09C004BB591 /* DollarViewController.swift in Sources */,
-				DCE4C4E2296DD894004BB591 /* DollarServices.swift in Sources */,
 				DCE4C4F7296DE0DB004BB591 /* WeatherViewController.swift in Sources */,
 				DCE4C4B0296DD28E004BB591 /* AppDelegate.swift in Sources */,
 				DCE4C4B2296DD28E004BB591 /* SceneDelegate.swift in Sources */,

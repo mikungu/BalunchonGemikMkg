@@ -8,7 +8,7 @@
 import UIKit
 
 final class DollarViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
-
+    //MARK: -Properties
     //we have the property of the textField where the user can write the amount
     @IBOutlet weak var amountLocalDevise: UITextField!
     //we have the property of the pickerView where the user can select the name of his local device
@@ -18,29 +18,29 @@ final class DollarViewController: UIViewController, UIPickerViewDelegate, UIPick
     //we have an area where the result has to appear
     @IBOutlet weak var responseArea: UILabel!
     
-    //we have an instance of DollarService
-    private let dollar = DollarService(session: URLSession(configuration: .default))
-    
+    //we have an instance of Services
+    let dollar = DollarModel() 
+    //MARK: - Accessible
     //the pickerView has only one column (component)
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     //the pickerView's elements is a rates.count
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return rates.count
+        return Rates().rate.count
     }
     //response of the element selected
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return rates[row]
+        return Rates().rate[row]
     }
-    
+    //MARK: -Override
     override func viewDidLoad() {
-           super.viewDidLoad()
-
-           // "EUR" defined as localDeviceName by default in the pickerView
-           localDeviceName.selectRow(46, inComponent: 0, animated: true)
-       }
-    
+        super.viewDidLoad()
+        
+        // "EUR" defined as localDeviceName by default in the pickerView
+        localDeviceName.selectRow(46, inComponent: 0, animated: true)
+    }
+    //MARK: - Actions
     //we have in the principal view a tapGestureRecogniser
     @IBAction private func dismissKeyBoard(_ sender: UITapGestureRecognizer) {
         //the user has the possibility to hide the keyboard
@@ -51,51 +51,44 @@ final class DollarViewController: UIViewController, UIPickerViewDelegate, UIPick
         textField.resignFirstResponder()
         return true
     }
-    //we retrieve the data in the form
-    private func createPetObject () {
-        let amountLocal = self .amountLocalDevise.text
-        let localDeviceIndex = self .localDeviceName.selectedRow(inComponent: 0)
-        let device = rates [localDeviceIndex]
     
-    }
     
     @IBAction func validate(_ sender: Any) {
         
         
-        validateButton.isHidden = true
-  
-        dollar.getDollar() { succes, dollar in
-      
-            guard succes, let dollar = dollar else {
-                self.presentAlert(with: "la requête à échoué")
+        validerButton.isHidden = true
+        
+        dollar.getDollar { (success, dollar) in
+            
+                              guard let dollar = dollar, success == true else {
+                self.presentAlert(with: "Oups! Echec de requête")
                 return
             }
             
-            let localDevise = self.LocalDeviseTextField.text
-            let moneyIndex = self.ratePickerView.selectedRow(inComponent: 0)
-            let money = rates[moneyIndex]
+            let localDevise = self.amountLocalDevise.text
+            let moneyIndex = self.localDeviceName.selectedRow(inComponent: 0)
+            let money = Rates().rate[moneyIndex]
             
             // here we try to convert the money in a Double
             // if the user enter an invalide number, present an alert to the user
             guard let result = Double(localDevise!) else {
                 self.presentAlert(with: "Veuillez entrer un nombre valide")
-                self.activityLoading.isHidden = true
-                self.validateButton.isHidden = false
+                self.validerButton.isHidden = false
                 return
             }
             
-            let convertion = dollar.convertionIntoDollar(number : result, local : money, dict : dollar.rates as NSDictionary)
+            let convertion = dollar.changeLocalToDollar(number : result, local : money, dict : dollar.rates as NSDictionary)
             
-            self.responseLabel.text = "\(result) \(money) vaut actuellement \(Double(round(100*(convertion))/100))$ !"
-
-            self.activityLoading.isHidden = true
-            self.validateButton.isHidden = false
-        }
-        createPetObject()
+            self.responseArea.text = "\(result) \(money) vaut actuellement \(Double(round(100*(convertion))/100))$ !"
+            
+            
+            self.validerButton.isHidden = false
         }
     }
-    //we create an extension of the class DollarViewController...
-    extension DollarViewController {
+}
+//MARK: - Extension
+//we create an extension of the class DollarViewController...
+extension DollarViewController {
     //we present an alert to the user
     private func presentAlert(with error: String) {
         //initialize an instance of this class
@@ -107,5 +100,5 @@ final class DollarViewController: UIViewController, UIPickerViewDelegate, UIPick
         //present the alert with the present method of UIViewController
         present(alertVC, animated: true, completion: nil)
     }
-
+    
 }

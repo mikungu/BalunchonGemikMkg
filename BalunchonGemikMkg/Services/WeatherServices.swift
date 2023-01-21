@@ -91,4 +91,6 @@ class WeatherService {
         var request = URLRequest(url: URL(string: "http://openweathermap.org/img/wn/\(icone)@2x.png")!)
         request.httpMethod = "GET"
         return request
-    }}
+    }
+    
+}
